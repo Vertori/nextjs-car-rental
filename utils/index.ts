@@ -31,3 +31,15 @@ export const calculateCarRent = (city_mpg: number, year: number) => {
 
   return rentalRatePerDay.toFixed(0);
 };
+
+export const updateSearchParams = (type: string, value: string) => {
+  const searchParams = new URLSearchParams(window.location.search);
+
+  // setting model params
+  searchParams.set(type, value);
+
+  // set new path
+  const newPathName = `${window.location.pathname}?${searchParams.toString()}`;
+
+  return newPathName;
+};
