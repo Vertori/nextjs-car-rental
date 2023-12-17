@@ -2,7 +2,7 @@
 
 import { SearchManufacturerProps } from "@/types";
 import { manufacturers } from "@/constants";
-import React, { useState, Fragment } from "react";
+import { useState, Fragment } from "react";
 import { Combobox, Transition } from "@headlessui/react";
 import Image from "next/image";
 
@@ -23,7 +23,7 @@ const SearchManufacturer = ({
         );
 
   return (
-    <div className="search-manufacturer">
+    <div className="search-manufacturer z-[100]">
       <Combobox value={manufacturer} onChange={setManufacturer}>
         <div className="relative w-full">
           {/* button showing dropdown onclick  */}

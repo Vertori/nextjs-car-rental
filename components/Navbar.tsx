@@ -1,4 +1,3 @@
-import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { CustomButton } from ".";
@@ -9,7 +8,7 @@ const Navbar = () => {
       <nav className="max-w-[1440px] mx-auto flex justify-between items-center sm:px-16 px-6 py-4">
         <Link href="/" className="flex justify-center items-center">
           <Image
-            src="/logo.svg"
+            src="/website-logo.webp"
             alt="Car Rental Logo"
             width={118}
             height={18}
